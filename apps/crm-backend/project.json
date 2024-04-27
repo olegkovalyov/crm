@@ -1,0 +1,24 @@
+{
+  "name": "crm-backend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/crm-backend/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "crm-backend:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "crm-backend:build:development"
+        },
+        "production": {
+          "buildTarget": "crm-backend:build:production"
+        }
+      }
+    }
+  }
+}
