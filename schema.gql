@@ -1,0 +1,51 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Jump {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Query {
+  users: [User!]!
+  user(id: Int!): User!
+  jumps: [Jump!]!
+  jump(id: Int!): Jump!
+}
+
+type Mutation {
+  createUser(createUserInput: CreateUserInput!): User!
+  updateUser(updateUserInput: UpdateUserInput!): User!
+  removeUser(id: Int!): User!
+  createJump(createJumpInput: CreateJumpInput!): Jump!
+  updateJump(updateJumpInput: UpdateJumpInput!): Jump!
+  removeJump(id: Int!): Jump!
+}
+
+input CreateUserInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateUserInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input CreateJumpInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateJumpInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
